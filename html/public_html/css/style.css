@@ -51,7 +51,7 @@ body {
     clear: both;
     float: right;
     width: 100%;
-    margin-top: 10px;
+    margin: 10px 0 29px 0;
 }
 
 .header-info p {
@@ -67,4 +67,31 @@ body {
 .header-info img {
     float: right;
     margin-left: 19px;
+}
+
+.navbar {
+    clear: both;
+    height: 55px;
+    background: url(../img/bg-navbar.jpg);
+    background-size: cover;
+}
+
+.navbar ul {
+    padding: 15px 0 15px 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    font-family: Raleway;
+    padding-right: 40px;
+}
+
+.navbar a {
+    color: #ffffff;
+    font-size: 17px; /* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 25px; /* Approximation due to font substitution */
+    text-align: left;
+    text-decoration: none;
 }
