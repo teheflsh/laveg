@@ -1,3 +1,14 @@
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -30,7 +41,7 @@ body {
 
 .header-tel a {
     float: right;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     color: #2d6075;
     font-size: 37px; /* Approximation due to font substitution */
     font-weight: 500;
@@ -57,8 +68,8 @@ body {
 .header-info p {
     float: right;
     margin: 5px 0 0 11px;
-    font-family: OpenSans;
-    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
     font-size: 15px; /* Approximation due to font substitution */
     font-weight: 300;
     line-height: 18px; /* Approximation due to font substitution */
@@ -71,9 +82,14 @@ body {
 
 .navbar {
     clear: both;
+    position: relative;
     height: 55px;
     background: url(../img/bg-navbar.jpg);
     background-size: cover;
+}
+
+.navbar .container {
+    position: relative;
 }
 
 .navbar ul {
@@ -83,15 +99,215 @@ body {
 
 .navbar li {
     display: inline;
-    font-family: Raleway;
-    padding-right: 40px;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 30px;
 }
 
 .navbar a {
-    color: #ffffff;
+    color: #fff;
     font-size: 17px; /* Approximation due to font substitution */
     font-weight: 400;
     line-height: 25px; /* Approximation due to font substitution */
     text-align: left;
     text-decoration: none;
+    text-transform: uppercase;
+}
+
+.alert {
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.alert-header {
+    background-color: #b5141d;
+    box-shadow: 1px 2px 5px 0px #090909;
+    width: 270px;
+    height: 113px;
+    position: relative;
+    right: 0;
+}
+
+.alert-header-title {
+    padding: 14px 13px 0 13px;
+}
+
+.alert-header-title img {
+    margin-right: 13px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.alert-header-title p {
+    margin: 0;
+    padding-top: 3px;
+    font-family: Calibri;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.alert-header-desc {
+    clear: both;
+    padding: 0 12px;
+}
+
+.alert-header-desc p {
+    font-family: Calibri;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    margin: 0;
+}
+
+.alert-line {
+    height: 4px;
+    width: 100%;
+    background: #262626;
+}
+
+.alert-body {
+    background: #dedede;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.46);
+    width: 270px;
+    height: 428px;
+}
+
+.alert-body p {
+    margin: 0;
+    font-family: Calibri;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    padding: 17px 14px 0 14px; 
+}
+
+.alert-block {
+    position: relative;
+    margin: 22px 0;
+    height: 26px;
+}
+
+.alert-block-1 {
+    position: absolute;
+    background-color: #222222;
+    width: 32px;
+    height: 26px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 17px; /* Approximation due to font substitution */
+    font-weight: 300;
+    line-height: 26px; /* Approximation due to font substitution */
+    text-align: center;
+    left: 13px;
+    z-index: 10;
+}
+
+.alert-block-line {
+    position: absolute;
+    background-color: #fff;
+    width: 247px;
+    height: 6px;
+    left: 13px;
+    top: 10px;
+}
+
+.alert-block-2 {
+    position: absolute;
+    background-color: #b5141d;
+    width: 32px;
+    height: 26px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 17px; /* Approximation due to font substitution */
+    font-weight: 300;
+    line-height: 26px; /* Approximation due to font substitution */
+    text-align: center;
+    right: 10px;
+}
+
+.alert-form {
+    position: relative;
+}
+
+.alert-form-shadow {
+    position: absolute;
+    background: url(../img/alert-form-shadow.png);
+    width: 272px;
+    height: 37px;
+}
+
+.alert-form h4 {
+    font-family: Calibri;
+    color: #060606;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: left;
+    margin: 20px 15px 14px 15px;
+}
+
+.alert-form p {
+    font-family: 'Trebuchet MS';
+    color: #060606;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    padding: 0 17px;
+}
+
+input[type="radio"]:before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    border-width: 1px;
+    border-color: #c0c0c0;
+    background-color: #ffffff;
+}
+
+input[type="radio"]:checked:before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #a60912;
+}
+
+.aleft-form-button {
+    padding-top: 20px;
+    margin: auto;
+    width: 222px;
+}
+
+.aleft-form-button button {
+    background-color: #b5141d;
+    width: 222px;
+    height: 47px;
+    text-transform: uppercase;
+    font-family: Calibri;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 17px;
+}
+
+.banner {
+    height: 617px;
+    background: url(../img/bg-banner.jpg) center;
+    background-size: cover;
 }
