@@ -314,6 +314,7 @@ input[type="radio"]:checked:before {
     font-weight: 400;
     letter-spacing: -0.48px;
     line-height: 17px;
+    border: none;
 }
 
 .aleft-form-button button:hover {
@@ -624,7 +625,8 @@ input[type="radio"]:checked:before {
     font-size: 11px;
     font-weight: 400;
     text-align: left;
-    line-height: 10px;
+    line-height: 30px;
+    margin: 0;
 }
 
 .contacts a {
@@ -658,6 +660,7 @@ input[type="radio"]:checked:before {
     font-weight: 400;
     line-height: 18.045px;
     text-align: left;
+    margin: 1px 0 0 0;
 }
 
 .footer .copyright {
@@ -667,4 +670,5 @@ input[type="radio"]:checked:before {
     font-weight: 400;
     line-height: 18.045px;
     text-align: left;
+    margin-top: 25px;
 }
