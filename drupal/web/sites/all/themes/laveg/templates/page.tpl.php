@@ -102,22 +102,20 @@
 
             <img class="linee" src="sites/all/themes/laveg/images/linee.png" alt="">
 
-            <div class="header-info">
-                <div class="header-clock">
+            <ul class="header-info">
+                <li>
                     <p>Mo-Fr von 8-20 Uhr</p>
                     <img src="sites/all/themes/laveg/images/clock.png" alt="">
-                </div>
-
-                <div class="consultation">
+                </li>
+                <li>
                     <p>Kostenlose Erstberatung</p>
                     <img src="sites/all/themes/laveg/images/consultation.png" alt="">
-                </div>
-
-                <div class="germany">
+                </li>
+                <li>
                     <p>Bundesweit tätig</p>
                     <img src="sites/all/themes/laveg/images/germany.png" alt="">
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -181,25 +179,9 @@
 
 <div class="contacts">
     <div class="container">
-        <div class="contacts-block">
-            <img src="sites/all/themes/laveg/images/map.png" alt="">
-            <p>Mahfesığmaz Mah. 79008 Sokak Sezen Apt. Kat:1 No:1 Çukurova / ADANA</p>
-        </div>
-
-        <div class="contacts-block">
-            <img src="sites/all/themes/laveg/images/telephone.png" alt="">
-            <p>Phone: <a href="tel: 03222355753">0322 235 57 53</a></p>
-        </div>
-
-        <div class="contacts-block">
-            <img src="sites/all/themes/laveg/images/mphone.png" alt="">
-            <p>Mobile: <a href="tel: 05335335333">0533 533 53 33</a></p>
-        </div>
-
-        <div class="contacts-block">
-            <img src="sites/all/themes/laveg/images/email.png" alt="">
-            <p>E-mail: <a href="mailto: info@laveg.de">info@laveg.de</a></p>
-        </div>
+        <?php if ($page['contacts'])
+            print render($page['contacts']);
+        ?>
     </div>
 </div>
 

@@ -33,6 +33,7 @@ regions[welcome] = Welcome
 regions[info] = Info
 regions[services] = Services
 regions[about] = About
+regions[contacts] = Contacts
 regions[copyright] = Copyright
 
 settings[shortcut_module_link] = 0

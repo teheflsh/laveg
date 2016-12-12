@@ -74,6 +74,10 @@ table {
     margin: 10px 0 29px 0;
 }
 
+.header-info li {
+    display: inline;
+}
+
 .header-info p {
     float: right;
     margin: 5px 0 0 11px;
@@ -668,20 +672,17 @@ input[type="radio"]:checked:before {
     overflow: auto;
 }
 
-.contacts-block {
-    float: left;
-    margin-left: 30px;
-    width: 15%;
+.contacts ul {
+    padding: 0;
 }
 
-.contacts-block:first-child {
+.contacts li {
+    padding-left: 30px;
+    display: inline;
+}
+
+.contacts li:first-child {
     margin-left: 0;
-    width: 38%;
-}
-
-.contacts img {
-    float: left;
-    margin-right: 10px;
 }
 
 .contacts p {
@@ -692,6 +693,13 @@ input[type="radio"]:checked:before {
     text-align: left;
     line-height: 30px;
     margin: 0;
+    float: left;
+    margin-right: 30px;
+}
+
+.contacts img {
+    float: left;
+    margin-right: 10px;
 }
 
 .contacts a {
