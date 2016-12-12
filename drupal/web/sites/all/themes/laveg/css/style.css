@@ -14,6 +14,10 @@ body {
     margin: 0;
 }
 
+table {
+    border: none;
+}
+
 .container {
     width: 1000px;
     margin: auto;
@@ -363,6 +367,8 @@ input[type="radio"]:checked:before {
     position: relative;
     margin-left: 4px;
     z-index: 1;
+    height: 165px;
+    width: 334px;
 }
 
 .welcome-img-block {
@@ -373,7 +379,7 @@ input[type="radio"]:checked:before {
     top: 57px;
 }
 
-.welcome-content {
+.welcome-content p {
     font-family: Calibri;
     color: #65666b;
     font-size: 15px;
@@ -384,6 +390,7 @@ input[type="radio"]:checked:before {
     padding-top: 8px;
     float: right;
     width: 636px;
+    margin: 0;
 }
 
 .info {
@@ -409,6 +416,7 @@ input[type="radio"]:checked:before {
     text-align: center;
     margin-right: 92px;
     float: left;
+    padding: 0;
 }
 
 .info-block:last-child {
@@ -473,6 +481,59 @@ input[type="radio"]:checked:before {
     margin: 0;
     text-transform: uppercase;
     margin-bottom: 24px;
+}
+
+.services ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.services li {
+   list-style: none;
+   border-bottom: 1px #d1d1d1 solid;
+   padding: 10px 0;
+   width: 272px;
+   float: left;
+   margin-right: 92px;
+   height: 18px;
+}
+
+.services li:nth-child(3n) {
+   margin-right: 0;
+}
+
+.services li:nth-child(3n):nth-last-child(-n+3) {
+    border-bottom: none;
+}
+
+.services li:nth-child(3n+1):nth-last-child(-n+3),
+  li:nth-child(3n+1):nth-last-child(-n+3) ~ li {
+    border-bottom: none;
+}
+
+.services li:before {
+   content: '';
+   display: inline-block;
+   height: 8px;
+   width: 4px;
+   background-image: url(../images/services-arrow.png);
+   margin-right: 15px;
+}
+
+.services a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    color: #7b7b7b;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.services a:hover {
+    cursor: pointer;
+    color: #b5141d;
+    transition: all 0.25s ease-out;
 }
 
 .services-block {
@@ -664,15 +725,25 @@ input[type="radio"]:checked:before {
     font-weight: 400;
     line-height: 18.045px;
     text-align: left;
-    margin: 1px 0 0 0;
 }
 
 .footer .copyright {
     font-family: Arial;
-    color: #ffffff;
+    color: #fff;
     font-size: 11.03px;
     font-weight: 400;
     line-height: 18.045px;
     text-align: left;
     margin-top: 25px;
+}
+
+.footer .copyright a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .copyright a:hover {
+    color: #fff;
+    opacity: 0.8;
+    transition: all 0.25s ease-out;
 }

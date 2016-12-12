@@ -174,86 +174,42 @@
 
 <div class="welcome">
     <div class="container">
-        <h1>Welcome Area</h1>
-        <div class="welcome-img">
-            <img src="sites/all/themes/laveg/images/img-welcome.jpg" alt="">
-            <div class="welcome-img-block"></div>
-        </div>
-        <div class="welcome-content">
-            Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımlaLorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarakLorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak
-        </div>
+        <?php if ($page['welcome'])
+            print render($page['welcome']);
+        ?>
     </div>
 </div>
 
 <div class="info">
     <div class="container">
-        <div class="info-block">
-            <img src="sites/all/themes/laveg/images/info-block-1.png" alt="">
-            <h1>driver's license</h1>
-            <p>Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak</p>
-            <a href="#">More</a>
-        </div>
-
-        <div class="info-block">
-            <img src="sites/all/themes/laveg/images/info-block-1.png" alt="">
-            <h1>LAWS & LAW</h1>
-            <p>Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak</p>
-            <a href="#">More</a>
-        </div>
-
-        <div class="info-block">
-            <img src="sites/all/themes/laveg/images/info-block-1.png" alt="">
-            <h1>legal services</h1>
-            <p>Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak</p>
-            <a href="#">More</a>
-        </div>
+        <?php if ($page['info'])
+            print render($page['info']);
+        ?>
     </div>
 </div>
 
 <div class="services">
     <div class="container">
         <h1>Services</h1>
-
-        <div class="services-block">
-            <ul>
-                <li><a href="#">Traffic Law</a></li>
-                <li class="active"><a href="#">Speeding Tickets</a></li>
-                <li><a href="#">Driver Responsibility Assessment Program</a></li>
-                <li><a href="#">Traffic Violations</a></li>
-            </ul>
-        </div>
-
-        <div class="services-block">
-            <ul>
-                <li><a href="#">Commercial Traffic Violations</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Suspended License</a></li>
-                <li><a href="#">DWI/DWAI</a></li>
-            </ul>
-        </div>
-
-        <div class="services-block">
-            <ul>
-                <li><a href="#">Suspension/Revocation Hearings</a></li>
-                <li><a href="#">Traffic Violations for Out of State Drivers</a></li>
-                <li><a href="#">Traffic Violations Bureau Appeals and Default Convictions</a></li>
-            </ul>
-        </div>
+        
+        <?php if ($page['services'])
+            print render($page['services']);
+        ?>
     </div>
 </div>
 
 <div class="about">
     <div class="container">
         <div class="about-block">
-            <h1>Laveg.de WORK SYSTEM</h1>
-            <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımlaLorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarakLorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak</p>
-            <a href="#">More Page</a>
+            <?php if ($page['about'])
+                print render($page['about']);
+            ?>
         </div>
     </div>
 </div>
 
 <div class="slogan">
-    “slogan AREA HERE”
+    <?php print $site_slogan; ?>
 </div>
 
 <div class="contacts">
@@ -283,11 +239,20 @@
 <div class="footer">
     <div class="container">
         <div class="footer-block">
-            <img src="sites/all/themes/laveg/images/footer-logo.png" alt="">
-            <p class="copyright">©2014 Laveg.de | All Right Reserved</p>
+            <a href="/">
+                <img src="sites/all/themes/laveg/images/footer-logo.png" alt="">
+            </a>
+            <div class="copyright">
+                <?php if ($page['copyright'])
+                    print render($page['copyright']);
+                ?>
+            </div>
         </div>
+        
         <div class="footer-block">
-            <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır.</p>
+            <?php if ($page['footer'])
+                print render($page['footer']);
+            ?>
         </div>
     </div>
 </div>
