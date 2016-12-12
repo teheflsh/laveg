@@ -131,42 +131,9 @@
             ));
         ?>
 
-        <div class="alert">
-            <div class="alert-header">
-                <div class="alert-header-title">
-                    <img src="sites/all/themes/laveg/images/alert-header-ico.png" alt="">
-                    <p>Jeder zweite Bußgeldbescheid ist fehlerhaft.</p>
-                </div>
-                <div class="alert-header-desc">
-                    <p>Akzeptieren Sie niemals einen Bußgeldbescheid ungeprüft. Sprechen Sie zuerst mit uns!</p>
-                </div>
-            </div>
-            <div class="alert-line"></div>
-            <div class="alert-body">
-                <p>Fragen kostet nichts. Schildern Sie uns Ihren Fall völlig unverbindlich. Bitte füllen Sie folgendes Formular aus:</p>
-                <div class="alert-block">
-                    <div class="alert-block-1">1</div>
-                    <div class="alert-block-line"></div>
-                    <div class="alert-block-2">2</div>
-                </div>
-                <div class="alert-form">
-                    <div class="alert-form-shadow">
-                        <h4>1. Was wird Ihnen vorgeworfen?</h4>
-                        <form action="">
-                            <p><input type="radio" name="form"> Geschwindigkeitsverstoß</p>
-                            <p><input type="radio" name="form"> Rotlichtverstoß</p>
-                            <p><input type="radio" name="form"> Abstandsverstoß</p>
-                            <p><input type="radio" name="form"> Alkohol- / Drogenverstoß</p>
-                            <p><input type="radio" name="form"> Parkverstoß</p>
-                            <p><input type="radio" name="form"> anderer Tatvorwurf</p>
-                            <div class="aleft-form-button">
-                                <button>Weiter</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php if ($page['alert'])
+            print render($page['alert']);
+        ?>
     </div>
 </div>
 
