@@ -95,27 +95,9 @@
         </div>
 
         <div class="header-right">
-            <div class="header-tel">
-                <a href="tel:03222355753">0322 235 57 53</a>
-                <img src="sites/all/themes/laveg/images/tel.png" alt="">
-            </div>
-
-            <img class="linee" src="sites/all/themes/laveg/images/linee.png" alt="">
-
-            <ul class="header-info">
-                <li>
-                    <p>Mo-Fr von 8-20 Uhr</p>
-                    <img src="sites/all/themes/laveg/images/clock.png" alt="">
-                </li>
-                <li>
-                    <p>Kostenlose Erstberatung</p>
-                    <img src="sites/all/themes/laveg/images/consultation.png" alt="">
-                </li>
-                <li>
-                    <p>Bundesweit tätig</p>
-                    <img src="sites/all/themes/laveg/images/germany.png" alt="">
-                </li>
-            </ul>
+            <?php if ($page['header'])
+                print render($page['header']);
+            ?>
         </div>
     </div>
 </div>
