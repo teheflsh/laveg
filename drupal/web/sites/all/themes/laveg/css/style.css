@@ -51,8 +51,8 @@ table {
 .sprite-email {
     background: url(../images/sprite.png) center;
     width: 24px;
-    height: 18px;
-    background-position: -5px -124px;
+    height: 29px;
+    background-position: -5px -118px;
     float: left;
     margin-right: 10px;
 }
@@ -78,8 +78,8 @@ table {
 .sprite-mphone {
     background: url(../images/sprite.png) center;
     width: 13px;
-    height: 25px;
-    background-position: -5px -222px;
+    height: 29px;
+    background-position: -5px -220px;
     float: left;
     margin-right: 10px;
 }
@@ -97,8 +97,8 @@ table {
 .sprite-telephone {
     background: url(../images/sprite.png) center;
     width: 9px;
-    height: 25px;
-    background-position: -5px -313px;
+    height: 29px;
+    background-position: -5px -310px;
     float: left;
     margin-right: 10px;
 }
@@ -282,7 +282,7 @@ table {
     font-weight: 400;
     line-height: 17px;
     text-align: left;
-    padding: 17px 14px 0 14px; 
+    padding: 17px 14px 0 14px;
 }
 
 .alert-block {
@@ -743,15 +743,15 @@ input[type="radio"]:checked:before {
 
 .contacts .container {
     overflow: auto;
+    padding: 24px 0 26px 0;
 }
 
 .contacts .list {
-    padding: 24px 0 26px 0;
     margin: 0;
+    padding: 0;
 }
 
 .contacts .list li {
-    padding-left: 30px;
     display: inline;
 }
 
@@ -770,9 +770,8 @@ input[type="radio"]:checked:before {
     font-weight: 400;
     text-align: left;
     line-height: 30px;
-    margin: 0;
+    margin: 0 30px 0 0;
     float: left;
-    margin-right: 30px;
 }
 
 .contacts a {

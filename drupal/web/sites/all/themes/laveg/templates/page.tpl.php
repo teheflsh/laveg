@@ -138,7 +138,7 @@
 <div class="services">
     <div class="container">
         <h1>Services</h1>
-        
+
         <?php if ($page['services'])
             print render($page['services']);
         ?>
@@ -179,7 +179,7 @@
                 ?>
             </div>
         </div>
-        
+
         <div class="footer-block">
             <?php if ($page['footer'])
                 print render($page['footer']);
